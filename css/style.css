@@ -38,8 +38,6 @@ header, footer {
     width: 100%;
     background-color: #131313;
     height: 83px;
-    /*padding-left: 92px;
-    padding-right: 90px;*/
     color: #E3B873;
     text-transform: uppercase;
     font-size: 11px;
@@ -126,7 +124,6 @@ main {
 .container-over-picBackground {
     width: 676px;
     padding-top: 194px;
-   /* margin-left: 134px;*/
     padding-bottom: 208px;
 }
 
