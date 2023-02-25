@@ -1346,8 +1346,7 @@ input[type=checkbox]:checked+label::before {
     
     input[type=submit] {
         width: 340px;
-        border: 1px solid #E3B873;
-        border-radius: 0;
+        -webkit-appearance: none;
     }
 
     .container-onlineControl-sizing .checkbox-agreement {
