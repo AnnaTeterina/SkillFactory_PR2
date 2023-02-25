@@ -1233,7 +1233,7 @@ input[type=checkbox]:checked+label::before {
         margin-top: -139px;
     }
 
-    .img-2, .slider2-wildestPics, .address-and-contacts .h3-2, .addressMap-image img:nth-child(2) {
+    .img-2, .slider2-wildestPics, .address-and-contacts, .addressMap-image img:nth-child(2) {
         display: block;
     }
 
@@ -1606,6 +1606,11 @@ input[type=checkbox]:checked+label::before {
         line-height: 25px;
         margin-bottom: 24px;
         width: 340px;
+    }
+
+    .h3-2 {
+        display: block;
+        text-decoration: none;
     }
 
     .contacts-icons {
