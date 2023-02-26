@@ -53,7 +53,7 @@ header, footer {
     height: 100%;
 }
 
-.colored-text, .a-1, .lc-1, .wld-l-1 {
+.colored-text, .container-cities-and-pic li:hover, nav a:hover, .wildest-list li:hover {
     color: #E3B873;
 }
 
@@ -69,6 +69,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #ffffff;
+    transition: color .2s ease-out;
 }
 
 .call {
@@ -158,7 +159,6 @@ main {
 
 .insideContainer-completedProjects {
     max-width: 1263px;
-    width: 1263px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -272,14 +272,19 @@ main {
     cursor: pointer;
 }
 
-.lc-1::after {
+.container-cities-and-pic li::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0px;
-    width: 194px;
+    width: 0;
     height: 1px;
     background-color: #E3B873;
+    transition: width .3s ease-in-out;
+}
+
+.container-cities-and-pic li:hover::after, .wildest-list li:hover::after {
+    width: 100%;
 }
 
 .img-2, .circleArrows, input[type=checkbox], .slider2-wildestPics, .address-and-contacts .h3-2, .addressMap-image img:nth-child(2) {
@@ -293,7 +298,6 @@ main {
 
 .container-onlineControl-sizing {
     max-width: 1263px;
-    width: 1263px;
     margin: 0 auto;
 }
 
@@ -480,7 +484,6 @@ input[type=checkbox]:checked+label::before {
 
 .container-Repair-sizing {
     max-width: 1263px;
-    width: 1263px;
     margin: 0 auto;
 }
 
@@ -787,21 +790,28 @@ input[type=checkbox]:checked+label::before {
 }
 
 .wildest-list ul {
-    width: 299px;
+    width: auto;
     height: 516px;
     font-size: 20px;
     line-height: 38px;
     padding: 0;
 }
 
-.wld-l-1::after {
+.wildest-list li {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+.wildest-list li::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 5px;
-    width: 146px;
+    width: 0;
     height: 1px;
     background-color: #E3B873;
+    transition: width .3s ease-in-out;
 }
 
 .container-wildestPics {
@@ -987,7 +997,6 @@ input[type=checkbox]:checked+label::before {
 
 .container-Contacts-sizing {
     max-width: 1263px;
-    width: 1263px;
     height: auto;
     margin: 0 auto;
 }
